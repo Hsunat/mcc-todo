@@ -4,7 +4,7 @@ import { View, Text, Button, StyleSheet, Alert, Linking } from 'react-native';
 import styled from 'styled-components/native';
 import axios from 'axios';
 
-const API_KEY = 'dummykey'; // Replace with your OpenAI API key
+const API_KEY = 'DUMMY_KEY'; // Replace with your OpenAI API key
 
 async function getChatGPTPlan(tasks) {
     const mycalendarlist = [
@@ -116,6 +116,7 @@ const PlanButton = styled.TouchableOpacity`
   background-color: #4682b4;
   padding: 15px;
   border-radius: 50px;
+  margin-top: 100px;
   margin-bottom: 20px;
 `;
 
@@ -131,7 +132,8 @@ const LinkList = styled.View`
 
 const LinkText = styled.Text`
   font-size: 16px;
-  color: blue;
+  color: white;
   text-decoration: underline;
+  text-decoration-color: white;
   margin-bottom: 10px;
 `;
